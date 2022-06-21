@@ -1,0 +1,62 @@
+<!--HTML document for Week 11 Coding Assignment - Tic Tac Toe Game-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="week11CodingAssign.css" />
+  </head>
+
+  <body class="background">
+    <div class="title">
+      <h1>Let's Play Tic Tac Toe</h1>
+    </div>
+    <div class="playerTurn">
+      <!--This <div> added so that players will know who is next-->
+      Go Player <span class="show-player playerX">X</span>!
+    </div>
+    <div class="container-squares">
+      <!--game grid and squares are created-->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="text-center">
+      <button class="container-gameResult playerTurn gameResult hide"></button
+      ><!--result displayed at end of each game-->
+    </div>
+
+    <div class="performReset">
+      <!--user can reset the game grid after completion of each game-->
+      <button id="reset">Reset</button>
+    </div>
+
+    <img
+      class="stanley mx-auto d-block"
+      height="175px"
+      width="125px"
+      src="Stanley_cup_closeup.jpg"
+    />
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="week11CodingAssign.js"></script>
+  </body>
+</html>
